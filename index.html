@@ -41,6 +41,11 @@
             bottom: 0;
             width: 100%;
         }
+        footer::before {
+            content: "";
+            display: block;
+            height: 40px; /* Adjust height to create space between main content and footer */
+        }
         a {
             color: #0066cc;
             text-decoration: none;
@@ -50,6 +55,13 @@
         }
         ul {
             list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .main-content {
+            padding-bottom: 60px; /* To create spacing before the footer */
         }
     </style>
 </head>
@@ -60,7 +72,7 @@
         <p>Management Information Systems (MIS) Graduate</p>
     </header>
 
-    <main>
+    <main class="main-content">
         <section>
             <h2>🚀 Who I Am</h2>
             <ul>
@@ -88,21 +100,21 @@
 
         <section>
             <h2>🛠 Skills</h2>
-            <p><strong>Technical Skills</strong><br>
-            Python, SQL, Tableau, Power BI, Jira, Asana, AWS, GCP, Azure</p>
-            <p><strong>Soft Skills</strong><br>
-            Leadership, Communication, Problem-solving, Time Management</p>
-            <p><strong>Certifications</strong><br>
-            Agile Project Management, AWS Machine Learning, Generative AI<br>
-            <a href="https://www.linkedin.com/in/nahom-lakew-31b1a11b7">Full List on LinkedIn</a></p>
+            <ul>
+                <li><strong>Technical Skills:</strong> Python, SQL, Tableau, Power BI, Jira, Asana, AWS, GCP, Azure</li>
+                <li><strong>Soft Skills:</strong> Leadership, Communication, Problem-solving, Time Management</li>
+                <li><strong>Certifications:</strong> Agile Project Management, AWS Machine Learning, Generative AI<br>
+                    <a href="https://www.linkedin.com/in/nahom-lakew-31b1a11b7">Full List on LinkedIn</a>
+                </li>
+            </ul>
         </section>
 
         <section>
             <h2>📈 Key Projects</h2>
-            <p><strong>Strategic IT Initiatives for Tahoma School District</strong><br>
-            Implemented centralized management, boosting efficiency by 25%.</p>
-            <p><strong>Retail Decision-Making Analysis</strong><br>
-            Analyzed 10,000 transactions, leading to a $125,000 increase in electronics sales.</p>
+            <ul>
+                <li><strong>Strategic IT Initiatives for Tahoma School District:</strong> Implemented centralized management, boosting efficiency by 25%.</li>
+                <li><strong>Retail Decision-Making Analysis:</strong> Analyzed 10,000 transactions, leading to a $125,000 increase in electronics sales.</li>
+            </ul>
         </section>
 
         <section>
