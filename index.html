@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nahom Lakew - Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- This will link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Add some basic styles here */
+        /* General styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -37,14 +37,11 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
-        footer::before {
-            content: "";
-            display: block;
-            height: 40px; /* Adjust height to create space between main content and footer */
+        /* Fixing footer overlap */
+        .main-content {
+            margin-bottom: 80px; /* Space for the fixed footer */
         }
         a {
             color: #0066cc;
@@ -59,9 +56,6 @@
         }
         li {
             margin-bottom: 0.5rem;
-        }
-        .main-content {
-            padding-bottom: 60px; /* To create spacing before the footer */
         }
     </style>
 </head>
