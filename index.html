@@ -4,56 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nahom Lakew - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         /* General styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
         header {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1.5rem 0;
         }
-        h1 {
-            margin: 0;
-        }
+
         main {
+            flex: 1; /* Ensures main content takes up available space */
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
             background-color: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+
         section {
             margin-bottom: 2rem;
         }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1rem;
-            width: 100%;
+            padding: 0.5rem;
         }
-        /* Fixing footer overlap */
-        .main-content {
-            margin-bottom: 80px; /* Space for the fixed footer */
-        }
+
         a {
             color: #0066cc;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         ul {
             list-style-type: none;
             padding-left: 0;
         }
+
         li {
             margin-bottom: 0.5rem;
         }
@@ -66,13 +68,13 @@
         <p>Management Information Systems (MIS) Graduate</p>
     </header>
 
-    <main class="main-content">
+    <main>
         <section>
             <h2>🚀 Who I Am</h2>
             <ul>
-                <li><strong>IT Project Manager</strong>: Skilled in Agile methodologies, managing complex IT initiatives, and optimizing processes.</li>
-                <li><strong>Data Analyst</strong>: Transforming data into actionable insights using Tableau, Power BI, and Python.</li>
-                <li><strong>Business Analyst</strong>: Bridging technical and business strategies to drive operational efficiency.</li>
+                <li><strong>IT Project Manager:</strong> Skilled in Agile methodologies, managing complex IT initiatives, and optimizing processes.</li>
+                <li><strong>Data Analyst:</strong> Transforming data into actionable insights using Tableau, Power BI, and Python.</li>
+                <li><strong>Business Analyst:</strong> Bridging technical and business strategies to drive operational efficiency.</li>
             </ul>
         </section>
 
